@@ -49,6 +49,12 @@ max-width: 100%;
 height: auto;
 }
 
+ul {
+list-style-type: none;
+padding-left: 0px;
+margin: 0px;
+}
+
 section {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -64,11 +70,8 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.header .container{
-display: flex;
-justify-content: space-between;
-}
-/* header */
+
+/* Header */
 .header {
 display: flex;
 border-bottom: 1px solid #ECECEC;
@@ -77,18 +80,19 @@ margin-right: auto;
 justify-content: space-between;
 }
 
-.header-nav {
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__nav {
 flex-grow: 1;
 display: flex;
 align-items: center;
 }
 
-.header-container {
-display: flex;
-align-items: center;
-}
 
-.header-menu {
+.header__menu {
 display: flex;
 justify-content: space-between;
 gap: 50px;
@@ -103,13 +107,8 @@ gap: 30px;
 margin-left: auto;
 }
 
-ul {
-list-style-type: none;
-padding-left: 0px;
-margin: 0px;
-}
 
-.header-menu .current {
+.header__menu .current {
 color: var(--color-link);
 }
 
@@ -130,7 +129,7 @@ color: var(--color-primary);
 
 /* LINK */
 
-.link-header {
+.header__link {
 position: relative;
 display: block;
 color: var(--color-primary);
@@ -144,12 +143,12 @@ transition: color 250ms, fill 250ms, background-color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-header:hover,
-.link-header:focus{
+.header__link:hover,
+.header__link:focus{
 color: var(--color-link);
 }
 
-.link-header::after{
+.header__link::after{
 position: absolute;
 display: block;
 opacity: 0;
@@ -162,11 +161,11 @@ bottom: -1px;
 border-radius: 2px;
 }
 
-.link-header.current::after{
+.header__link.current::after{
 opacity: 1;
 }
 
-.link-header2 {
+.header__link2 {
 display: flex;
 flex-direction: row-reverse;
 align-items: center;
@@ -185,18 +184,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-.link-header2:hover,
-.link-header2:focus,
-.link-header2:active{
+.header__link2:hover,
+.header__link2:focus,
+.header__link2:active{
 color: var(--color-link);
 }
 
-.link-header2:hover,
-.link-header2:focus,
-.link-header2:active .link-header2-icon{
+.header__link2:hover,
+.header__link2:focus,
+.header__link2:active .header__link2-icon{
 fill: var(--color-link);
 }
-.link-header2:hover .link-header2-icon-tel {
+.header__link2:hover .header__link2-icon-tel {
 fill: var(--color-link);
 }
 
@@ -657,13 +656,7 @@ margin-right: auto;
 
 
 /* CARD-SET */
-.item {
-/* width: 370px;
-height: 404px; */
-}
-
 .portfolio-card{
-
 }
 
 .card-set {
