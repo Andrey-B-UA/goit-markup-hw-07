@@ -932,24 +932,24 @@ color: var(--color-link);
 }
 
 /* Email-input */
-.email-input-h2 {
-margin-bottom: 20px;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-line-height: 1.17;
-text-align: left;
-text-transform: uppercase;
-color: var(--color-background);
-}
-
-.email-input {
+.email__input {
 display: block;
 margin-left: 93px;
 width: 570px;
 height: 86px;
 background-color: var(--section-background);
 padding: 0px;
+}
+
+.input__text {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1.17;
+	text-align: left;
+	text-transform: uppercase;
+	color: var(--color-background);
 }
 
 /* Form-email */
