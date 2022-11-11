@@ -9,14 +9,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -308,27 +308,27 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a class="web-title-footer" href="./index.html"
+          <a class="footer__title" href="./index.html"
             >Web<span class="studio2">Studio</span></a
           >
           <address>
             <ul>
-              <li>
+              <li class="footer__address">
                 <a
-                  class="link-footer-map"
+                  class="link__footer link__footer--map"
                   href="https://goo.gl/maps/G4VMoDMN7nGozyxC7"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li>
-                <a class="link-footer" href="mailto:info@devstudio.com"
+              <li class="footer__address">
+                <a class="link__footer" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a class="link-footer" href="tel:+380961111111"
+              <li class="footer__address">
+                <a class="link__footer" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -336,44 +336,60 @@
           </address>
         </div>
 
-        <div class="socials-list-footer">
-          <p class="section-social-list">приєднуйтесь</p>
-          <ul class="socials-list">
+        <div class="footer__socials">
+          <p class="footer__call">приєднуйтесь</p>
+          <ul class="footer__lists">
             <li>
-              <a class="socials-link footer--link" href="#">
-                <svg width="20" height="20">
+              <a class="socials__link footer--link" href="#">
+                <svg
+                  class="socials__icon socials__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
             <li>
-              <a class="socials-link footer--link" href="#">
-                <svg width="20" height="20">
+              <a class="socials__link footer--link" href="#">
+                <svg
+                  class="socials__icon socials__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
             <li>
-              <a class="socials-link footer--link" href="#">
-                <svg width="20" height="20">
+              <a class="socials__link footer--link" href="#">
+                <svg
+                  class="socials__icon socials__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
             <li>
-              <a class="socials-link footer--link" href="#">
-                <svg width="20" height="20">
+              <a class="socials__link footer--link" href="#">
+                <svg
+                  class="socials__icon socials__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="email-input">
-          <p class="email-input-h2">Підпишіться на розсилку</p>
+        <div class="email__input">
+          <p class="input__text">Підпишіться на розсилку</p>
           <div class="footer-label">
             <form class="contact-form" name="contact-form" action="#">
               <label for="person-email-input" class="form-email-label"></label>
