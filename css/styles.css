@@ -91,7 +91,6 @@ display: flex;
 align-items: center;
 }
 
-
 .header__menu {
 display: flex;
 justify-content: space-between;
@@ -106,8 +105,6 @@ align-items: center;
 gap: 30px;
 margin-left: auto;
 }
-
-
 
 
 .web-title {
@@ -260,10 +257,6 @@ padding-top: 94px;
 padding-bottom: 0px;
 }
 
-/* .advantages__container {
-
-} */
-
 .advantages__list {
 display: flex;
 justify-content: space-between;
@@ -322,10 +315,10 @@ gap: 30px;
 margin: 0;
 }
 
-
 .work__card{
 position: relative;
 }
+
 .card__background {
 position: absolute;
 bottom: 0;
@@ -357,8 +350,6 @@ justify-content: center;
 margin-left: auto;
 margin-right: auto;
 }
-
-
 
 .team__name {
 color: var(--color-primary);
@@ -410,7 +401,7 @@ font-size: 16px;
 line-height: 1.13;
 }
 
-.networks {
+.socials {
 display: flex;
 align-items: center;
 gap: 10px;
@@ -418,7 +409,7 @@ justify-content: center;
 padding-top: 16px;
 }
 
-.socials-link-team {
+.socials__link{
 display: flex;
 align-items: center;
 justify-content: center;
@@ -431,23 +422,21 @@ transition: fill 250ms, background-color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link-team:hover, 
-.socials-link-team:focus {
+.socials__link:hover, 
+.socials__link:focus {
 background-color: var(--color-link);
 }
 
-.socials-icon{
+.socials__icon{
 fill: var(--color-background-icon);
 }
 
-.socials-link-team:hover .socials-icon,
-.socials-link-team:focus .socials-icon 
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon 
 {fill: var(--color-background);}
 
 
-.studio2 {
-color: #FFFFFF;
-}
+
 
 
 .regular-customers {
@@ -541,6 +530,10 @@ line-height: 1.17;
 margin-bottom: 20px;;
 }
 
+.studio2 {
+	color: #FFFFFF;
+}
+
 .link-footer-map {
 color: #FFFFFF;
 background-color: #2F303A;
@@ -599,7 +592,7 @@ align-items: center;
 gap: 10px;
 }
 
-.socials-link{
+.footer--link{
 display: flex;
 align-items: center;
 justify-content: center;
@@ -611,8 +604,8 @@ border-radius:50%;
 transition: background-color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-link:hover,
-.socials-link:focus{
+.footer--link:hover,
+.footer--link:focus{
 background-color: var(--color-link);
 fill: var(--color-background);
 }
