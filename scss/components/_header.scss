@@ -108,18 +108,28 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link2__icon {
+	fill: var(--color-secondary);
+}
+
+.link2__tel {
+	fill: var(--color-secondary);
+}
+
 .header__link2:hover,
 .header__link2:focus,
 .header__link2:active {
 	color: var(--color-link);
 }
 
-.header__link2:hover,
-.header__link2:focus,
-.header__link2:active .header__link2-icon {
+.header__link2:hover .link2__icon,
+.header__link2:focus .link2__icon,
+.header__link2:active .link2__icon {
 	fill: var(--color-link);
 }
 
-.header__link2:hover .header__link2-icon-tel {
+.header__link2:hover .link2__tel,
+.header__link2:focus .link2__tel,
+.header__link2:active .link2__tel {
 	fill: var(--color-link);
 }
