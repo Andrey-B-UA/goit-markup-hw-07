@@ -1,5 +1,11 @@
 /* Work */
+
 .work {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.work__title {
 	color: var(--color-primary);
 	background-color: var(--color-background);
 	font-size: 36px;
@@ -10,7 +16,12 @@
 	margin-right: auto;
 	margin-bottom: 50px;
 	text-align: center;
+
 }
+
+
+
+
 
 .work__list {
 	/* position: relative; */
